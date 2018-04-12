@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>05_Animation_iteration_count</title>
+		<style type="text/css">
+			#box1{
+				width:700px;
+				height:390px;;
+				border: 5px solid pink;
+				background:url(images/singer1.jpg) no-repeat;
+				background-size:100% auto;
+			}
+			
+			#box1:hover{
+				animation-name:ani1;
+				animation-duration:3s;
+				animation-iteration-count:infinite;
+			}
+			
+			@keyframes ani1{
+				from{}
+				to{background:url(images/singer2.jpg) no-repeat; background-size:100% auto;}
+			}
+			
+			#box2{
+				width:700px; 
+				height:690px;
+				border:5px solid pink;
+				background:url(images/a.jpg) no-repeat;
+				background-size:100% auto;
+			}
+			
+			#box2:hover{
+				animation-name:ani2;
+				animation-duration:5s;
+				animation-iteration-count:infinite;
+			}
+			
+			/*background-size의 단위를 맞추자.*/
+			@keyframes ani2{
+				from{}
+				20%{background: url(images/b.jpg) no-repeat; background-size:100% auto;}
+				40%{background: url(images/c.jpg) no-repeat; background-size:100% auto;}
+				60%{background: url(images/d.jpg) no-repeat; background-size:100% auto;}
+				80%{background: url(images/e.jpg) no-repeat; background-size:100% auto;}
+				to{background:url(images/a.jpg) no-repeat; background-size:100% auto;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1"></div>
+		<div id="box2"></div>
+	</body>
+</html>

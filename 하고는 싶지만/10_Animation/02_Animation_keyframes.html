@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>02_Animation-keyframes</title>
+		<!--Flash를 대체하기 위해 만들어짐-->
+		<style>
+			@keyframes name{
+				0%{
+					background:red;
+				}
+				
+				50%{
+					background:green;
+				}
+				
+				100%{
+					background:yellow;
+				}
+			}
+			
+			@keyframes name{
+				from{background : red;}
+				50%{background : green;}
+				to{background : yellow;}
+			}
+			/* 이렇게 써도 된다. */
+		</style>
+	</head>
+
+	<body>
+		<div id="box1"></div>
+		<div id="box2"></div>
+	</body>
+</html>
+
+
+<!--
+	프레임 단위로 움직인다..
+	애니메이션으 무한반복 가능
+-->

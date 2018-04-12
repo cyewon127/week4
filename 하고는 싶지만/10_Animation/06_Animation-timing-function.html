@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>04_Transition-timing-function</title>
+		<style type="text/css">
+			#container{
+				width:500px; 
+				height:500px; 
+				border:3px dotted red; 
+				margin:0 auto;
+			}
+			
+			#container > div{width:100px; height:100px; margin:0 auto;}
+			
+			.box1{background: #56889d;}
+			.box2{background: #f4eade;}
+			.box3{background: #f5e3e9;}
+			.box1:hover{animation-name:box1; animation-duration:2s;}
+			.box2:hover{animation-name:box2; animation-duration:2s;}
+			.box3:hover{animation-name:box3; animation-duration:2s;}
+			
+			@keyframes box1{
+				from{}
+				50%{}
+				to{width:300px; height:300px; background:#a1bfc9; border-radius:50%;}
+			}
+			
+			@keyframes box2{
+				from{}
+				50%{}
+				to{width:300px;height:300px; background:#ecd1c4; border-radius:50%;}
+			}
+			
+			@keyframes box3{
+				0%{}
+				100%{width:300px; height:300px; background:#a1bfc9; border-radius:50%;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="ex">
+			<div class="ease"> ease </div>
+			<div class="linear"> linear </div>
+			<div class="ease-in"> ease-in </div>
+			<div class="ease-out"> ease-out </div>
+			<div class="ease-in-out"> ease-in-out</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transform</title>
+		<style>
+			.box{
+				width:200px;
+				height:60px;
+				background:#faef7c;
+				margin-top:50px;
+				margin-left:100px;
+				padding:20px;
+				opacity:0.5;
+				transform:scale(0.5) rotate(15deg);
+				
+				animation-name : ani;
+				animation-duration : 3s;
+				animation-direction : alternate;
+				animation-iteration-count : infinite;
+				/*인피니트를 쓰지 않고 되돌아가려고 한다면 디폴트값인 1이 아닌 최소 2를 사용해야된다. 1만 하면 갓다 안돌아온다*/
+				
+			}
+			
+			@keyframes ani{
+				100%{
+					width:400px;
+					background:#ff9400;
+					opacity:1;
+					transform:scale(1) rotate(0);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<h3>CSS3 Animation</h3>
+		</div>
+	</body>
+</html>

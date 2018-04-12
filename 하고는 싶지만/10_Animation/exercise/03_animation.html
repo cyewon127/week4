@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>03_animation3</title>
+		<style type="text/css">
+            div{
+                width:100px;
+                height:100px;
+                background:red;
+                animation-name:ani1;
+                animation-duration:4s;
+            }
+            
+            @keyframes ani1{
+                30%{transform:translateX(200px); transition-duration:2s; background:#000;}
+                60%{transform:translate(200px,200px); transition-duration:2s; background:yellow;}
+                90%{transform:translateY(200px); transition-duration:2s; background:pink;}
+                100%{transform:translateX(-200px); transition-duration:2s; background:red;}
+            }
+		</style>
+	</head>
+	<body>
+
+		<div></div>
+
+	</body>
+</html>

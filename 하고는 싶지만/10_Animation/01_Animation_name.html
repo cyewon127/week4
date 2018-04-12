@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>01_Animation_name</title>
+		<style>
+			div{
+				width:300px;
+				height:300px;
+				background:blue;
+				margin: 0 auto;
+			}
+			
+			div:hover{
+				animation-name:ani1;
+				animation-duration:3s;
+			}
+			
+			@keyframes ani1{
+				from{background:blue;}
+				30%{background:red}
+				70%{background:yellow;}
+				to{background:blue;}
+			}
+			
+			-webkit-@keyframes ani1{
+				from{background:blue;}
+				30%{background:red}
+				70%{background:yellow;}
+				to{background:blue;}
+			}
+			
+			-moz-@keyframes ani1{
+				from{background:blue;}
+				30%{background:red}
+				70%{background:yellow;}
+				to{background:blue;}
+			}
+			
+			-o-@keyframes ani1{
+				from{background:blue;}
+				30%{background:red}
+				70%{background:yellow;}
+				to{background:blue;}
+			}
+			
+			
+			
+			/*시작되어있는 색을 기존의 색이랑 맞춰주는게 자연스럽다.*/
+			/*마지막 또한 기존의 색이랑 맞춰주는게 자연스럽다. 티가 안나도록*/
+		</style>
+	</head>
+
+	<body>
+		<div></div>
+	</body>
+</html>

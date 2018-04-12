@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Rotate</title>
+        <style>
+			div{width:900px; height:800px; border: 5px dotted red; margin: 50px auto;}
+			img{width:300px; margin:50px; border:2px solid blue; transition-duration:5s;}
+			
+			#positiveNumber img:nth-of-type(1):hover{transform:rotate(45deg);}
+			#positiveNumber img:nth-of-type(2):hover{transform:rotate(100deg);}
+			#positiveNumber img:nth-of-type(3):hover{transform:rotate(200deg);}
+			#positiveNumber img:nth-of-type(4):hover{transform:rotate(10800deg);}
+			
+			#negativeNumber img:nth-of-type(1):hover{transform:rotate(-45deg);}
+			#negativeNumber img:nth-of-type(2):hover{transform:rotate(-100deg);}
+			#negativeNumber img:nth-of-type(3):hover{transform:rotate(-200deg);}
+			#negativeNumber img:nth-of-type(4):hover{transform:rotate(-300deg);}
+        </style>
+        
+    </head>
+    
+    <body>
+        <div id="positiveNumber">
+        	<img src="images/ryan5.gif" alt="">
+        	<img src="images/ryan6.gif" alt="">
+        	<img src="images/ryan7.gif" alt="">
+        	<img src="images/ryan8.gif" alt="">
+        </div>
+        
+        <div id="negativeNumber">	
+        	<img src="images/ryan5.gif" alt="">
+        	<img src="images/ryan6.gif" alt="">
+        	<img src="images/ryan7.gif" alt="">
+        	<img src="images/ryan8.gif" alt="">
+        </div>
+    </body>
+    
+</html>
+
+
+<!--rotate는 시계방향으로 회전한다 (양수값일때, 음수면 그의 반대)-->

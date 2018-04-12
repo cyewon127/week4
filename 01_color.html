@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		p{font-size : 30px;}
+		p:nth-child(1){color:red;}
+		p:nth-child(2){color:#ff0000;} /* 16진수 표기법*/
+		p:nth-child(3){color:rgb(0,255,0);} /*RGB값*/
+		p:nth-child(4){color:rgba(255, 0 , 0 , 0.1);}
+		/*RGB + 알파값(투명도), 투명도는 0과 1사이*/
+
+		#opacity{opacity:0.5; background-color:yellow; color:blue;}
+	</style>
+</head>
+<body>
+<p>멋쟁이 사자처럼_색</p>
+<p>멋쟁이 사자처럼_16진수 표기하기</p>
+<p>멋쟁이 사자처럼_RGB값</p>
+<p>멋쟁이 사자처럼_RGBA값</p>
+<p id="opacity">멋쟁이 사자처럼 Opacity</p>
+</body>
+</html>
+
+
+
+
+<!--
+
+    16진수 
+    #ff     /     00     /     00 
+     Red         green        blue  를 나타낸다.
+     
+    포토샵처럼 확인하고 적용하려면 검사를 클릭해서 하자
+    
+    보통은 2번 4번이 많이 쓰인다.
+    
+ -->

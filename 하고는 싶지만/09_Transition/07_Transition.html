@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+        <title>Double Transition</title>
+		<style>
+			div{
+				width:200px;
+				height:200px;
+				background:red;
+				border:1px solid;
+				/*transition-property:all;
+				transition-duration:2s;
+				transition-delay:1s;
+				transition-timing-function:linear;*/
+				transition: all 1s 1s linear;	/*위에 있는 애들 순서대로 한번에 쓸 수 있다.*/
+			}									/*걍 값을 다 쓰자 이래 쓸거면*/
+			
+			div:hover{
+				width:400px;
+				height:400px;
+				background:greenyellow;
+				border:1px solid red;
+				transform: translateX(200px) rotate(360deg);
+			}
+		</style>
+	</head>
+	<body>
+        <div id="box">
+        	<h2>Hello</h2>
+        </div>
+	</body>
+</html>

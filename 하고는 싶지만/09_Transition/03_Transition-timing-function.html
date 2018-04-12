@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Transition Timing Function</title>
+		<style>
+			/**{margin:0; height:0;}*/
+			
+			#wrap > div{
+				width:100px;
+				height:50px;
+				margin:5px 10px;
+				padding:5px;
+				color:white;
+				background:#006aff;
+				border-radius:5px;
+				font-weight:bold;
+				/*display:inline-block;*/
+				float:left;
+				transition-duration:2s;
+			}
+			
+			#wrap:hover>div{
+				height:400px;
+			}
+			
+			.linear{transition-timing-function:linear;}
+			/*처음부터 끝까지 같은 속도로 트랜지션 진행*/
+			.ease{transition-timing-function:ease;}
+			/*처음에는 천천히 시작, 점점 빨라지다 마지막에는 천천히*/
+			.ease-in{transition-timing-function:ease-in;}
+			/*느리게 시작*/
+			.ease-out{transition-timing-function:ease-out
+			/*느리게 끝냄*/
+			.ease-in-out{transition-timing-function:ease-in-out;}
+			/*느리게 시작해서 느리게 끝냄*/
+				
+		</style>
+	</head>
+	<body>
+      	
+      	<div id="wrap">
+			<div class="linear">linear</div>
+			<div class="ease">ease</div>
+			<div class="ease-in">ease-out</div>
+			<div class="ease-out">ease-in</div>
+			<div class="ease-in-out">ease-in-out</div>
+       	</div>
+       	
+	</body>
+</html>
+
+
+
+ 
+ 
+

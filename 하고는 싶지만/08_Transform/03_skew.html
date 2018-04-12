@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Skew</title>
+        <style>
+			
+			div{width:900px; height:800px; border: 5px dotted red; margin: 50px auto;}
+			img{width:300px; margin:50px; border:2px solid blue;}
+			
+			#positiveNumber img:nth-of-type(1):hover{transform:skewX(45deg);}
+			#positiveNumber img:nth-of-type(2):hover{transform:skewY(45deg);}
+			#positiveNumber img:nth-of-type(3):hover{transform:skew(45deg,20deg);}
+			#positiveNumber img:nth-of-type(4):hover{transform:skew(45deg);}		
+			
+			#negativeNumber img:nth-of-type(1):hover{transform:skewX(-45deg);}
+			#negativeNumber img:nth-of-type(2):hover{transform:skewY(-45deg);}
+			#negativeNumber img:nth-of-type(3):hover{transform:skew(-45deg,20deg);}
+			/*외곡될 때? skew를 사용한다. 태그를 비튼다. 라고 쓴다.*/
+			
+        </style>
+    </head>
+    <body>
+       <div id="positiveNumber">
+       		<img src="images/ryan1.gif" alt="">
+       		<img src="images/ryan2.gif" alt="">
+       		<img src="images/ryan3.gif" alt="">
+       		<img src="images/ryan4.gif" alt="">
+       </div>
+       
+       <div id="negativeNumber">
+       		<img src="images/ryan1.gif" alt="">	
+       		<img src="images/ryan2.gif" alt="">	
+       		<img src="images/ryan3.gif" alt="">	
+       		<img src="images/ryan4.gif" alt="">	
+       </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>animation-timing-function</title>
+		<style type="text/css">
+            /*#ex{
+                width:600px; height:600px;
+                border:1px solid;
+            }*/
+            
+            #ex{
+                width:515px;
+                height:300px;
+                border:5px dotted red;
+            }
+            #ex>div{
+                width:100px;
+                height:50px;
+                background:blue;
+                line-height:50px;
+                text-align:center;
+                color:#fff;
+                border-radius:5px;
+                margin:5px 10px;
+                font-weight:bold;
+                animation-name: ease;
+                animation-duration:2s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate;
+            }
+            .ease{animation-timing-function:ease;}
+            .linear{animation-timing-function:linear;}
+            .ease-in {animation-timing-function:ease-in ;}
+            .ease-out{animation-timing-function: ease-out;}
+            .ease-in-out{animation-timing-function:ease-in-out;}
+            
+            @keyframes ease{
+                100%{
+                    width:500px;
+                }
+            }
+	   </style>
+	</head>
+<body>
+     
+		<div id="ex">
+			<div class="ease"> ease </div>
+			<div class="linear"> linear </div>
+			<div class="ease-in"> ease-in </div>
+			<div class="ease-out"> ease-out </div>
+			<div class="ease-in-out"> ease-in-out</div>
+		</div>
+	</body>
+</html>

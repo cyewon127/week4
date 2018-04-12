@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Translate</title>
+        <style>
+			div{
+				width:900px; height:800px; border:5px dotted red;
+				margin:50px auto;	
+			}
+			
+			div>img{width:300px; margin:50px; border:2px solid blue;}
+			
+			#number>img:nth-of-type(1):hover{transform : translateX(50px);}
+			#number>img:nth-of-type(2):hover{transform : translateY(50px);}
+			#number>img:nth-of-type(3):hover{transform : translate(50px, 50px);}
+			
+			#negativeNumber>img:nth-of-type(1):hover{transform: translateX(-50px);}
+			#negativeNumber>img:nth-of-type(2):hover{transform: translateY(-50px);}
+			#negativeNumber>img:nth-of-type(3):hover{transform: translate(-50px,-50px);}
+        </style>
+    </head>
+    <body>
+        <div id="number">
+			<!--<img src="images/ryan1.gif" alt="대체 텍스트">-->
+			<img src="images/ryan1.gif" alt="">
+			<img src="images/ryan2.gif" alt="">
+			<img src="images/ryan3.gif" alt="">
+		</div>
+		
+		<div id="negativeNumber">
+			<img src="images/ryan1.gif" alt="">
+			<img src="images/ryan2.gif" alt="">
+			<img src="images/ryan3.gif" alt="">
+		</div>
+    </body>
+</html>
+
+	<!--	
+			transform (움직이게 하는 속성)							
+			transition (움직임을 제어하는 속성[시간이나, 속도등])	 위에 둘은 거의 붙어다님 (기본이 단방향, 한번 움직이는거임)
+			animation (양방향?)			
+	-->

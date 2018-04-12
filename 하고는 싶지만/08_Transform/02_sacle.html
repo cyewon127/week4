@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Scale</title>
+        <style>
+			div{width:900px; height:800px; border: 5px dotted red; margin: 50px auto;}
+			img{width:300px; margin:50px; border:2px solid blue;}
+			#positiveNumber img:nth-of-type(1):hover{transform: scaleX(1.5);}
+			#positiveNumber img:nth-of-type(2):hover{transform: scaleY(1.5);}
+			#positiveNumber img:nth-of-type(3):hover{transform: scale(1.5,1.5);}
+			#positiveNumber img:nth-of-type(4):hover{transform: scale(1.5);}
+			
+			#negativeNumber:hover img:nth-of-type(1){transform: scaleX(0.5);}
+			#negativeNumber img:nth-of-type(2):hover{transform: scaleY(0.5);}
+			#negativeNumber img:nth-of-type(3):hover{transform: scale(0.5,0.5);}
+			#negativeNumber img:nth-of-type(4):hover{transform: scale(0.5);}
+			
+			/*깜빡이는거 없에는법 -> 부모한테 hover을 주면됨*/
+			
+        </style>
+    </head>
+    <body>
+        <div id="positiveNumber">
+        	<img src="images/ryan4.gif" alt="">
+        	<img src="images/ryan5.gif" alt="">
+        	<img src="images/ryan6.gif" alt="">
+        	<img src="images/ryan7.gif" alt="">
+		</div>
+   
+   		<div id="negativeNumber">
+   			<img src="images/ryan4.gif" alt="">
+   			<img src="images/ryan5.gif" alt="">
+   			<img src="images/ryan6.gif" alt="">
+   			<img src="images/ryan7.gif" alt="">
+   		</div>	
+    </body>
+</html>

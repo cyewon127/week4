@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>04_animation4</title>
+		<style type="text/css">
+            div{
+                width:100px;
+                height:100px;
+                background:red;
+            }
+            
+            .div1{
+                animation-name:ani1;
+                animation-duration:4s;
+            }
+            
+            .div2{
+                animation-name:ani2;
+                animation-duration:4s;
+                animation-delay:2s;
+            }
+            
+            @keyframes ani1{
+                25%{transform:translateX(200px); transition-duration:2s; background:black;}
+                50%{transform:translate(200px,200px); transition-duration:2s; background:yellow;}
+                75%{transform:translateY(200px); transition-duration:2s; background:pink;}
+                100%{transform:translate(0); transition-duration:2s; background:red;}
+            }
+             @keyframes ani2{
+                25%{transform:translateX(200px); transition-duration:2s; background:black;}
+                50%{transform:translate(200px,200px); transition-duration:2s; background:yellow;}
+                75%{transform:translateY(200px); transition-duration:2s; background:pink;}
+                100%{transform:translate(0); transition-duration:2s; background:red;}
+            }
+            
+		</style>
+	</head>
+	<body>
+
+		<div class="div1"></div>
+
+		<div class="div2"></div>
+
+	</body>
+</html>
